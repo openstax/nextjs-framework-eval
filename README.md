@@ -7,13 +7,26 @@ https://npmtrends.com/@redwoodjs/core-vs-@remix-run/react-vs-gatsby-vs-next-vs-v
 
 https://nextjs.org/
 
-### [docs](https://github.com/jellydn/next-swagger-doc)
+### [swagger docs](https://github.com/jellydn/next-swagger-doc)
+
+Files of note:
+
+* [Swagger and TS typing](models/user.ts)
+* [API endpoint](pages/api/me.ts)
+* [Telefunc handler](pages/me/index.telefunc.ts)
 
 swagger example:
 
 https://github.com/jellydn/next-swagger-doc/blob/main/examples/next13-simple/pages/api/organization.tsx
 
 start dev server: `npm run dev`
+
+#### Page based routing
+
+There's not an equivilent of Rails routes.rb, instead urls are constructed from the path on disk.  That [can be overridden](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) if
+needed, but it's the default.
+
+
 
 #### urls
 /me displays json about user
