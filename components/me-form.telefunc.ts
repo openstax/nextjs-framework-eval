@@ -1,5 +1,5 @@
 
-import { CURRENT_USER, User } from '../../models/user'
+import { CURRENT_USER, User } from '../models/user'
 
 
 // multi-user is a fad,  why would a website ever need more than one?

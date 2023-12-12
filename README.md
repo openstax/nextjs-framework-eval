@@ -7,13 +7,17 @@ https://npmtrends.com/@redwoodjs/core-vs-@remix-run/react-vs-gatsby-vs-next-vs-v
 
 https://nextjs.org/
 
+### [aws-sample
+* https://dev.to/alexvladut/how-to-add-aws-cdk-to-an-existing-project-2d30
+* https://github.com/aws-samples/aws-lambda-nextjs/tree/main/nextjs-lambda-cdk
+
 ### [swagger docs](https://github.com/jellydn/next-swagger-doc)
 
 Files of note:
 
 * [Swagger and TS typing](models/user.ts)
 * [API endpoint](pages/api/me.ts)
-* [Telefunc handler](pages/me/index.telefunc.ts)
+* [Telefunc handler](components/me-form.telefunc.ts)
 
 swagger example:
 
