@@ -31,9 +31,26 @@ There's not an equivilent of Rails routes.rb, instead urls are constructed from 
 needed, but it's the default.
 
 
+#### deployed with SST
+
+it builds on top of AWS CDK
+https://docs.sst.dev/start/nextjs
+
+is deployed to: [https://d2k44yiqocld87.cloudfront.net/me](https://d2k44yiqocld87.cloudfront.net/me)
+
+### lambda timings
+
+need to verify these further, they're just from chrome network console
+
+cold start around 2.5sec for /me  this is the "waiting for server response" time
+
+hot response times:
+  * 220ms for /me which is rendered React and served as html
+  * 30ms for /doc/api which is static
+  * 150ms for telefunc call to update name in memory
 
 #### urls
-/me displays json about user
+/me displays form to edit user info
 
 /api/me returns json about user
 
