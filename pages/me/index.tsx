@@ -8,6 +8,7 @@ export default function AboutMe({ user }: InferGetServerSidePropsType<typeof get
     ev.preventDefault();
     const inputs = ev.target.elements
     await onUpdateUser({
+      id: 'me',
       name: inputs.name.value,
       email: inputs.email.value,
     })

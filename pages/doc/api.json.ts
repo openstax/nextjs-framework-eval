@@ -1,3 +1,4 @@
+import { GetServerSideProps } from 'next';
 import { getApiDocs } from '@/swagger';
 
 export default function uncalled() {
@@ -6,7 +7,7 @@ export default function uncalled() {
     )
 }
 
-export const getServerSideProps = async ({ res }) => {
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   res.setHeader("Content-Type", "application/json");
   const spec = await getApiDocs();
   res.write(JSON.stringify(spec));
